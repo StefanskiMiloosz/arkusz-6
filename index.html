@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Układ bloków</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        width: 700px;
+        margin: 20px auto;
+        border: 2px solid black;
+        padding: 10px;
+    }
+
+    .block {
+        border: 1px solid black;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .sections {
+        display: flex;
+        border: 1px solid black;
+    }
+
+    .section {
+        flex: 1;
+        padding: 40px 10px;
+        border-right: 1px solid black;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .section:last-child {
+        border-right: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="block">Blok nagłówkowy</div>
+
+    <div class="sections">
+        <div class="section">Pierwszy blok sekcji</div>
+        <div class="section">Drugi blok sekcji</div>
+        <div class="section">Trzeci blok sekcji</div>
+        <div class="section">Czwarty blok sekcji</div>
+    </div>
+
+    <div class="block">Blok stopki</div>
+
+</div>
+
+</body>
+</html>
